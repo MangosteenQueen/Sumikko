@@ -11,7 +11,7 @@
 }
 
 body{
-    background-color: #FFFEE9
+    background-color: var(--color-beige)
 }
 
 @font-face {
@@ -41,7 +41,7 @@ body{
     font-family: "Diary";
     font-size: 2.5rem;
     font-weight: bold;
-    color: black;
+    color: var(--color-brown)
 }
 .Mdiary{
     font-family: "Diary";
@@ -52,7 +52,7 @@ body{
     font-family: "Zen Kurenaido";
     font-size: 2.5rem;
     font-weight: bold;
-    color: black;
+    color: var(--color-brown)
 }
 
 /* ~~~~~~~~~~~~~~~~~~~~~navigation~~~~~~~~~~~~~~~~~~~~~ */
