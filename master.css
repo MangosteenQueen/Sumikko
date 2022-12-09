@@ -10,6 +10,10 @@
     list-style-type: none;
 }
 
+body{
+    background-color: #FFFEE9
+}
+
 @font-face {
     font-family: "Diary";
     src: url("fonts/EF_Diary.ttf") format("truetype");
@@ -26,12 +30,12 @@
 .cafe{
     font-family: "Cafe"; 
     font-size: 3rem;
-    color: #5E4034;
+    color: var(--color-brown)
 } 
 .diary{
     font-family: "Diary";
     font-size: 2.5rem;
-    color: #5E4034;
+    color: var(--color-brown)
 }
 .Bdiary{
     font-family: "Diary";
@@ -42,7 +46,7 @@
 .Mdiary{
     font-family: "Diary";
     font-size: 2rem;
-    color: #5E4034;
+    color: var(--color-brown)
 }
 .Bzen{
     font-family: "Zen Kurenaido";
@@ -50,18 +54,6 @@
     font-weight: bold;
     color: black;
 }
-
-.snow{
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
-    color: var(--color-brown);
-    font-size: 2vw;
-    font-weight: bold;
-    z-index: 100;
-  }
 
 /* ~~~~~~~~~~~~~~~~~~~~~navigation~~~~~~~~~~~~~~~~~~~~~ */
 
@@ -113,22 +105,32 @@ li{
 
 /* ~~~~~~~~~~~~~~~~~~~~~index(page0)~~~~~~~~~~~~~~~~~~~~~ */
 
+.mainpagesnow{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 1920px;
+    height: 1080px;
+    /* height: 100vh; */
+    z-index: 1;
+    opacity: 50%;
+  }
+
 .page00{
     background-color: #FFFEE9
 }
 
 .page00-body{
     width: 1920px;
-    /* height: 1080px; */
 }
 
-.page00-bg{
+.page00-img01-container{
+    position: absolute;
+    display: flex;
+    justify-content: center;
     width: 100%;
-    /* height: 1080px; */
-    height: 100vh;
-    background-image: url(img/img01.png);
-    background-position: center;
-    background-size: cover;
+    height: 1080px;
+    top: 0;
 }
 
 .page00-logo-container{
@@ -145,6 +147,7 @@ li{
     justify-content: space-between;
     width: 450px;
     height: 260px;
+    z-index: 2;
 }
 
 .page00-button-container{
@@ -170,20 +173,42 @@ li{
 }
 .button01{
     top: 0px;
-    z-index: 1;
+    z-index: 2;
 }
 .button02{
     top: 190px;
-    z-index: 2;
+    z-index: 3;
 }
 .button03{
     bottom: 0px;
-    z-index: 3;
+    z-index: 4;
 }
 
 .page00-footer{
+    padding-top: 1025px
+}
+.page00-footer-container{
+    position: absolute;
+    display: flex;
+    justify-content: center;
     width: 100%;
     height: 55px;
-    text-align: center;
+    background-color: white;
     opacity: 50%;
+}
+.page00-footer-wrapper{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 1100px;
+}
+.page00-footer-letter{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 1100px;
+    height: 55px;
+    text-align: center;
 }
