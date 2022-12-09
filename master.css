@@ -1,0 +1,189 @@
+/* ~~~~~~~~~~~~~~~~~~~~~settings&basic~~~~~~~~~~~~~~~~~~~~~ */
+:root {
+    --color-beige:#FFFEE9;
+    --color-brown:#5E4034;
+}
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+@font-face {
+    font-family: "Diary";
+    src: url("fonts/EF_Diary.ttf") format("truetype");
+}
+@font-face {
+    font-family: "Cafe";
+    src: url("fonts/Cafe24Ssurround.ttf") format("truetype");
+}
+@font-face {
+    font-family: 'Zen Kurenaido', sans-serif;
+    src: url("ZenKurenaido-Regular.ttf") format("truetype");
+}
+
+.cafe{
+    font-family: "Cafe"; 
+    font-size: 3rem;
+    color: #5E4034;
+} 
+.diary{
+    font-family: "Diary";
+    font-size: 2.5rem;
+    color: #5E4034;
+}
+.Bdiary{
+    font-family: "Diary";
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: black;
+}
+.Mdiary{
+    font-family: "Diary";
+    font-size: 2rem;
+    color: #5E4034;
+}
+.Bzen{
+    font-family: "Zen Kurenaido";
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: black;
+}
+
+.snow{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    color: var(--color-brown);
+    font-size: 2vw;
+    font-weight: bold;
+    z-index: 100;
+  }
+
+/* ~~~~~~~~~~~~~~~~~~~~~navigation~~~~~~~~~~~~~~~~~~~~~ */
+
+nav{
+    position: fixed;
+    width: 100%;
+    height: 120x;
+    top: 0;
+    background-color: #FFFAC2;
+    z-index: 100;
+}
+
+ul{
+    display: flex;
+    justify-content: space-between;
+    width: 1100px;
+    height: 120x;
+    margin: 0 auto;
+    z-index: 101;
+}
+
+li{
+    z-index: 101;
+}
+
+.navibt01{
+    padding-left: 50px;
+    padding-right: 23px;
+    z-index: 101;
+}
+.navibt02{
+    z-index: 101;
+}
+.navibt03{
+    z-index: 101;
+}
+.navibt04{
+    z-index: 101;
+}
+
+.navi-img{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 210px;
+    z-index: 99;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~index(page0)~~~~~~~~~~~~~~~~~~~~~ */
+
+.page00{
+    background-color: #FFFEE9
+}
+
+.page00-body{
+    width: 1920px;
+    /* height: 1080px; */
+}
+
+.page00-bg{
+    width: 100%;
+    /* height: 1080px; */
+    height: 100vh;
+    background-image: url(img/img01.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.page00-logo-container{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 260px;
+    top: 110px;
+}
+.page00-logo-wrapper{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 450px;
+    height: 260px;
+}
+
+.page00-button-container{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 609px;
+    top: 346px;
+}
+.page00-button-wrapper{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 307px;
+    height: 609px;
+}
+
+.page00-button{
+    position: absolute;
+    width: 307px;
+    height: 232px;
+}
+.button01{
+    top: 0px;
+    z-index: 1;
+}
+.button02{
+    top: 190px;
+    z-index: 2;
+}
+.button03{
+    bottom: 0px;
+    z-index: 3;
+}
+
+.page00-footer{
+    width: 100%;
+    height: 55px;
+    text-align: center;
+    opacity: 50%;
+}
